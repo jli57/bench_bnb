@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
-  window.fetchBenches = fetchBenches; 
+  window.fetchBenches = fetchBenches;
+  window.getState = store.getState; 
 
   ReactDOM.render(<Root store={store}/>, root);
 });
