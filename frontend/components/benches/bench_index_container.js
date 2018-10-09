@@ -7,7 +7,7 @@ const mapStateToProps = ({ entities: { benches }}) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchBenches: () => dispatch( fetchBenches() )
+  fetchBenches: (filters) => dispatch( fetchBenches(filters) )
 })
 
 export default connect( mapStateToProps, mapDispatchToProps )(BenchIndex);

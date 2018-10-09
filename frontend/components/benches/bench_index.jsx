@@ -1,9 +1,10 @@
 import React from 'react';
 
 class BenchIndex extends React.Component {
-  
+
   componentDidMount() {
-    this.props.fetchBenches();
+    const filters = google.map.getBounds();
+    this.props.fetchBenches(filters);
   }
 
   render() {
